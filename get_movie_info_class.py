@@ -80,7 +80,6 @@ class DoubanDetailSpider(object):
         info = [data.get(key, '') for key in keys]
         self.handler.write(','.join(info))
 
-
     def getNextPage(self, page):
         # 获取下一页
         if page:
